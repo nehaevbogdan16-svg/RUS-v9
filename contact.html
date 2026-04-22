@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <div class="burger" onclick="toggleMenu()">☰</div>
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+
+
+            <nav id="menu">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <a href="water-purification.html">Водоочистка</a>
+                <a href="water-treatment.html">Водоподготовка</a>
+                <a href="reagents.html">Реагенты</a>
+                <a href="projects.html">Проекты</a>
+
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="form-box">
+
+                <div class="form-head">
+                    <h2>Запросить инженерное решение</h2>
+                    <p>Опишите задачу — мы подготовим техническое предложение</p>
+                </div>
+
+                <form class="form-grid">
+
+                    <div class="input-group">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Тип объекта</label>
+                        <select>
+                            <option>Промышленный объект</option>
+                            <option>Завод</option>
+                            <option>Муниципальный</option>
+                            <option>Реагенты</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group full">
+                        <label>Описание задачи</label>
+                        <textarea placeholder="Опишите задачу, объём воды, требования..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Прикрепить файл</label>
+                        <input type="file" name="file">
+                    </div>
+                    <div class="form-bottom">
+                        <button class="btn">Отправить заявку</button>
+                        <span>Ответим в течение 1 рабочего дня</span>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/imask"></script>
+
+    <script>
+        const phoneInput = document.querySelector('input[type="tel"]');
+
+        const mask = IMask(phoneInput, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    </script>
+
+    <!-- Доверие -->
+    <div class="section-title">
+        <h2>Нам доверяют</h2>
+    </div>
+
+
+    <div class="trust-slider">
+
+        <div class="trust-track">
+
+            <!-- 1 круг -->
+            <div class="logo-item"><img src="img/clients/client1.png"></div>
+            <div class="logo-item"><img src="img/clients/client2.png"></div>
+            <div class="logo-item"><img src="img/clients/client3.png"></div>
+            <div class="logo-item"><img src="img/clients/client4.png"></div>
+            <div class="logo-item"><img src="img/clients/client5.png"></div>
+            <div class="logo-item"><img src="img/clients/client6.png"></div>
+            <div class="logo-item"><img src="img/clients/client7.png"></div>
+            <div class="logo-item"><img src="img/clients/client8.png"></div>
+            <div class="logo-item"><img src="img/clients/client9.png"></div>
+            <div class="logo-item"><img src="img/clients/client10.png"></div>
+            <div class="logo-item"><img src="img/clients/client11.png"></div>
+            <div class="logo-item"><img src="img/clients/client12.png"></div>
+            <div class="logo-item"><img src="img/clients/client13.png"></div>
+
+            <!-- 1 круг -->
+            <div class="logo-item"><img src="img/clients/client1.png"></div>
+            <div class="logo-item"><img src="img/clients/client2.png"></div>
+            <div class="logo-item"><img src="img/clients/client3.png"></div>
+            <div class="logo-item"><img src="img/clients/client4.png"></div>
+            <div class="logo-item"><img src="img/clients/client5.png"></div>
+            <div class="logo-item"><img src="img/clients/client6.png"></div>
+            <div class="logo-item"><img src="img/clients/client7.png"></div>
+            <div class="logo-item"><img src="img/clients/client8.png"></div>
+            <div class="logo-item"><img src="img/clients/client9.png"></div>
+            <div class="logo-item"><img src="img/clients/client10.png"></div>
+            <div class="logo-item"><img src="img/clients/client11.png"></div>
+            <div class="logo-item"><img src="img/clients/client12.png"></div>
+            <div class="logo-item"><img src="img/clients/client13.png"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <h4>ООО РУС</h4>
+            <p>Инженерные системы водоочистки и водоподготовки</p>
+        </div>
+
+        <div>
+            <h4>Разделы</h4>
+            <a href="about.html">О компании</a><br>
+
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div>
+            <h4>Контакты</h4>
+            <p>Тел: +7 (000) 000-00-00</p>
+            <p>Email: info@rusvodo.ru</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ООО РУС. Все права защищены
+
+    </div>
+
+    <span>
+        <a href="https://nehaevbogdan16-svg.github.io/Aura.IT/">Сделано Aura IT</a>
+    </span>
+</footer>

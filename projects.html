@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <div class="burger" onclick="toggleMenu()">☰</div>
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+
+
+            <nav id="menu">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <a href="water-purification.html">Водоочистка</a>
+                <a href="water-treatment.html">Водоподготовка</a>
+                <a href="reagents.html">Реагенты</a>
+                <a href="projects.html">Проекты</a>
+
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="section">
+        <div class="container">
+
+            <div style="max-width:600px;">
+                <div class="badge">НАШИ ПРОЕКТЫ</div>
+                <h1>Реализованные проекты</h1>
+                <p class="muted">Системы водоочистки для промышленных и коммерческих объектов</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ПРОЕКТЫ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="grid-3">
+
+                <div class="card">
+
+                    <div class="project-slider">
+                        <img src="assets/projects/1.jpg" class="slide active" onclick="openLightbox(this.src)">
+                        <img src="assets/projects/1.1.jpg" class="slide" onclick="openLightbox(this.src)">
+                        <img src="assets/projects/1.2.jpg" class="slide" onclick="openLightbox(this.src)">
+                    </div>
+
+                    <h3>Промышленный объект</h3>
+                    <p class="muted">Система очистки воды для производства</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> снижение примесей</p>
+                        <p><b>Решение:</b> многоступенчатая фильтрация</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="project-slider">
+                        <img src="assets/projects/1.jpg" class="slide active" onclick="openLightbox(this.src)">
+                        <img src="assets/projects/1.1.jpg" class="slide" onclick="openLightbox(this.src)">
+                        <img src="assets/projects/1.2.jpg" class="slide" onclick="openLightbox(this.src)">
+                    </div>
+                    <h3>Заводской комплекс</h3>
+                    <p class="muted">Водоочистка для технологических процессов</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> стабильное качество воды</p>
+                        <p><b>Решение:</b> автоматическая система</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Коммерческий объект</h3>
+                    <p class="muted">Очистка воды для инфраструктуры</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> безопасность воды</p>
+                        <p><b>Решение:</b> фильтрация + контроль</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Производство</h3>
+                    <p class="muted">Комплексная система подготовки воды</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> технологические нормы</p>
+                        <p><b>Решение:</b> промышленная очистка</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Агропромышленный объект</h3>
+                    <p class="muted">Очистка воды для производственных нужд</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> качество для процессов</p>
+                        <p><b>Решение:</b> фильтрационные установки</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Инфраструктурный объект</h3>
+                    <p class="muted">Система водоподготовки</p>
+
+                    <div style="margin-top:10px; font-size:14px;">
+                        <p><b>Задача:</b> стабильная подача</p>
+                        <p><b>Решение:</b> автоматизация процесса</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+
+            <div class="card" style="text-align:center; padding:40px;">
+                <h2>Нужен аналогичный проект?</h2>
+                <p class="muted">Разработаем решение под ваш объект</p>
+
+                <a href="contact.html" class="btn" style="margin-top:20px;">
+                    Обсудить проект
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Доверие -->
+    <div class="section-title">
+        <h2>Нам доверяют</h2>
+    </div>
+
+
+    <div class="trust-slider">
+
+        <div class="trust-track">
+
+            <!-- 1 круг -->
+            <div class="logo-item"><img src="img/clients/client1.png"></div>
+            <div class="logo-item"><img src="img/clients/client2.png"></div>
+            <div class="logo-item"><img src="img/clients/client3.png"></div>
+            <div class="logo-item"><img src="img/clients/client4.png"></div>
+            <div class="logo-item"><img src="img/clients/client5.png"></div>
+            <div class="logo-item"><img src="img/clients/client6.png"></div>
+            <div class="logo-item"><img src="img/clients/client7.png"></div>
+            <div class="logo-item"><img src="img/clients/client8.png"></div>
+            <div class="logo-item"><img src="img/clients/client9.png"></div>
+            <div class="logo-item"><img src="img/clients/client10.png"></div>
+            <div class="logo-item"><img src="img/clients/client11.png"></div>
+            <div class="logo-item"><img src="img/clients/client12.png"></div>
+            <div class="logo-item"><img src="img/clients/client13.png"></div>
+
+            <!-- 1 круг -->
+            <div class="logo-item"><img src="img/clients/client1.png"></div>
+            <div class="logo-item"><img src="img/clients/client2.png"></div>
+            <div class="logo-item"><img src="img/clients/client3.png"></div>
+            <div class="logo-item"><img src="img/clients/client4.png"></div>
+            <div class="logo-item"><img src="img/clients/client5.png"></div>
+            <div class="logo-item"><img src="img/clients/client6.png"></div>
+            <div class="logo-item"><img src="img/clients/client7.png"></div>
+            <div class="logo-item"><img src="img/clients/client8.png"></div>
+            <div class="logo-item"><img src="img/clients/client9.png"></div>
+            <div class="logo-item"><img src="img/clients/client10.png"></div>
+            <div class="logo-item"><img src="img/clients/client11.png"></div>
+            <div class="logo-item"><img src="img/clients/client12.png"></div>
+            <div class="logo-item"><img src="img/clients/client13.png"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h4>ООО РУС</h4>
+                <p>Инженерные системы водоочистки и водоподготовки</p>
+            </div>
+
+            <div>
+                <h4>Разделы</h4>
+                <a href="about.html">О компании</a><br>
+
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div>
+                <h4>Контакты</h4>
+                <p>Тел: +7 (000) 000-00-00</p>
+                <p>Email: info@rusvodo.ru</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ООО РУС. Все права защищены
+
+        </div>
+
+        <span>
+            <a href="https://nehaevbogdan16-svg.github.io/Aura.IT/">Сделано Aura IT</a>
+        </span>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+    <script>
+        document.querySelectorAll('.project-slider').forEach(slider => {
+            let slides = slider.querySelectorAll('.slide');
+            let index = 0;
+
+            setInterval(() => {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }, 3000);
+        });
+    </script>
+    <div id="lightbox" class="lightbox">
+
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+
+        <span class="lightbox-nav left" onclick="prevImage()">&#10094;</span>
+        <span class="lightbox-nav right" onclick="nextImage()">&#10095;</span>
+
+        <div class="lightbox-counter" id="lightbox-counter">1 / 1</div>
+
+        <img id="lightbox-img">
+
+    </div>
+    <script>
+
+        let images = [];
+        let currentIndex = 0;
+
+        function openLightbox(src) {
+            images = Array.from(document.querySelectorAll('.project-slider .slide'))
+                .map(img => img.src);
+
+            currentIndex = images.indexOf(src);
+
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+
+            updateCounter();
+
+            document.addEventListener('keydown', handleKeys);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.removeEventListener('keydown', handleKeys);
+        }
+
+        function showImage(index) {
+            if (index < 0) index = images.length - 1;
+            if (index >= images.length) index = 0;
+
+            currentIndex = index;
+
+            const img = document.getElementById('lightbox-img');
+
+            img.style.opacity = 0;
+
+            setTimeout(() => {
+                img.src = images[currentIndex];
+                img.style.opacity = 1;
+                updateCounter();
+            }, 120);
+        }
+
+        function nextImage() {
+            showImage(currentIndex + 1);
+        }
+
+        function prevImage() {
+            showImage(currentIndex - 1);
+        }
+
+        function updateCounter() {
+            document.getElementById('lightbox-counter').innerText =
+                (currentIndex + 1) + " / " + images.length;
+        }
+
+        /* клавиши */
+        function handleKeys(e) {
+            if (e.key === "Escape") closeLightbox();
+            if (e.key === "ArrowRight") nextImage();
+            if (e.key === "ArrowLeft") prevImage();
+        }
+
+        /* свайп */
+        let touchStartX = 0;
+
+        document.addEventListener("touchstart", e => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.addEventListener("touchend", e => {
+            let diff = e.changedTouches[0].clientX - touchStartX;
+
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) prevImage();
+                else nextImage();
+            }
+        });
+
+    </script>
+</body>
+</html>

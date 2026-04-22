@@ -1,0 +1,22 @@
+rusvodo/
+│
+├── index.html
+├── about.html
+├── services.html
+├── projects.html
+├── production.html
+├── contact.html
+│
+├── style.css
+├── script.js
+│
+└── /assets
+    ├── logo.png
+    ├── hero.jpg
+    ├── factory.jpg
+    └── projects/
+        ├── 1.jpg
+        ├── 2.jpg
+        └── 3.jpg
+
+S1-главная страница.
